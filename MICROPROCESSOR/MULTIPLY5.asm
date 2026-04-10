@@ -1,0 +1,8 @@
+LXI B,0606H
+MVI A,00H
+LOOP: ADD B
+           DCR C
+            JNZ LOOP
+
+STA 5006H
+HLT
