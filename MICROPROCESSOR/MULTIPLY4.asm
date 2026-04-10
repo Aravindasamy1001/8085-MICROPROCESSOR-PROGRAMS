@@ -1,0 +1,11 @@
+LHLD 5000H
+MOV B,L
+MOV C,H
+MVI A,00H
+
+LOOP: ADD B
+           DCR C
+           JNZ LOOP
+
+STA 5005H
+HLT
