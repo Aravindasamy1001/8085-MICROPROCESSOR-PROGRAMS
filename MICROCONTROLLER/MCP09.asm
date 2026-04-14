@@ -1,0 +1,15 @@
+ORG 0000H
+	MOV A,#01H
+	LOOP:
+	     MOV P1,A
+		 ACALL DELAY
+		 RR A
+		 ACALL DELAY
+		 SJMP LOOP
+		 
+		 DELAY:MOV R4,#200
+		       D1:MOV R5,#200
+			   D2:DJNZ R5,D2
+			   DJNZ R4,D1
+			   RET
+END
