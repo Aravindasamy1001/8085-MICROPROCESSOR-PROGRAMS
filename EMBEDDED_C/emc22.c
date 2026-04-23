@@ -18,7 +18,7 @@ void main(){
 	
 	led = 0x00;
 	
-	TMOD = 1; //timer 0 mode 1
+	TMOD = 1; //timer 0 mode 1.
 	
 	TH0 = 0xFC;
 	TL0 = 0x66;
